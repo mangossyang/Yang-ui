@@ -1,0 +1,41 @@
+@keyframes play {     /* 通过transform来启用GPU加速，跳过重排重绘阶段 */
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    to {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+@keyframes replay {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    to {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+.container {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    animation-timing-function: linear;
+}
+
+.progress.play {     /* 使animation动画启动 */
+    animation-play-state: running;
+}
+
+.progress.pause {    /* 使animation动画暂停 */
+    animation-play-state: paused;
+}
