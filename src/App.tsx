@@ -7,7 +7,7 @@ import SubMenu from './components/Menu/subMenu'
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex="0" onSelect={index => alert(index)}>
+      {/* <Menu defaultIndex="0" onSelect={index => alert(index)}>
         <MenuItem > cool link</MenuItem>
         <MenuItem disabled> cool link</MenuItem>
         <SubMenu title="dropdowm">
@@ -26,7 +26,7 @@ function App() {
         </SubMenu>
         <MenuItem > cool link</MenuItem>
 
-      </Menu>
+      </Menu> */}
       <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>button</Button>
       <Button btnType={ButtonType.Danger} disabled>button</Button>
       <Button btnType={ButtonType.Default} size={ButtonSize.Large}>button</Button>
