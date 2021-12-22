@@ -1,19 +1,25 @@
-
 // config
-@import "variables";
+@import 'variables';
 
 // layout
-@import "reboot";
+@import 'reboot';
 
 @import 'mixin';
 
 // animation
-@import "animation";
+@import 'animation';
 
-@import "@comp/Button/style";
+@import '../components/Button/style';
+@import '../components/Input/style';
 
 //menu
-@import "@comp/Menu/style";
+@import '../components/Menu/style';
 
 //Icon
-@import "@comp/Icon/style"
+@import '../components/Icon/style';
+//AutoComplete
+@import '../components/AutoComplete/style';
+//Upload
+@import '../components/Upload/style';
+//Progress
+@import '../components/Progress/style';
